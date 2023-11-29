@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/marychka2335/goit-js-hw-08.git"
   },
   "keywords": [],
   "author": "Olena Panchenko <marychka2335@icloud.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/marychka2335/goit-js-hw-08/issues"
   },
   "dependencies": {
+    "@vimeo/player": "^2.20.1",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.14.2",
