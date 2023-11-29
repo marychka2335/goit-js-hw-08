@@ -15,7 +15,7 @@
   "author": "Olena Panchenko <marychka2335@icloud.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marychka2335/goit-js-hw-08/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
     "@vimeo/player": "^2.20.1",
