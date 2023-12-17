@@ -34,6 +34,8 @@ function handleSubmit(event) {
     console.log({ email: inputEmail.value, message: message.value});
 }
 
-    form.reset();
+    // form.reset();
     localStorage.removeItem(STORAGE_KEY);
+    event.currentTarget.reset();
+    feedbackInfo = {};
 }
