@@ -7,11 +7,13 @@ const updateCurrentTime = time => {
     localStorage.setItem('videoplayer-current-time', JSON.stringify(time));
   };    
 
-player.on('timeupdate', throttle(onPlay, 1000));
-const currentVideoOptions = localStorage.getItem("videoplayer-current-time");
-const seconds = JSON.parse(currentVideoOptions).seconds;
-player.setCurrentTime(seconds);
+player.on('timeupdate', throttle(data => {const currentTime = data.seconds;
+    updateCurrentTime(currentTime);}, 1000));
 
+const savedTime = JSON.parse(localStorage.getItem('videoplayer-current-time'));
+if (savedTime !== null) {
+  player.setCurrentTime(savedTime);
+}
 function onPlay(data) {
     localStorage.setItem("videoplayer-current-time", JSON.stringify({seconds}));
-};
+}
